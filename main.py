@@ -20,7 +20,7 @@ class DonMA(object):
     """
     A Real-market trading class mirroring the piecewise-cta strategy 
     """
-    def __init__(self, symbols:list, account = None, window_ma = 22, window_hl = 17, market_cap = 1e6, cost_percentage = 0.06, backtest = True, debug = False, kq = None, tq_chan = None):
+    def __init__(self, symbols:list, account = None, window_ma = 5, window_hl = 5, market_cap = 1e6, cost_percentage = 1, backtest = True, debug = False, kq = None, tq_chan = None):
         self.debug = debug # debug开关
         self.account = account # 交易账号
         self.symbols = symbols # 今日活跃交易品种
